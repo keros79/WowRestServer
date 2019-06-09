@@ -1,0 +1,33 @@
+{
+  "server":{
+    "version":"1.1",
+    "type":"http",
+    "host":"localhost",
+    "listen_port":8899,
+    "feature":[],
+    "fileRootPath":"../ucband_resource"
+  },
+  "redis": {
+    "type":1,
+    "host":"localhost",
+    "port":6379,
+    "password": "footbared",
+    "connectTimeout":2000
+  },
+  "db": {
+    "client": "mysql",
+    "timezone": "Asia/Seoul",
+    "connection": {
+      "host" : "localhost",
+      "user" : "ucware",
+      "password" : "uc_qw_!@#$",
+      "database" : "ucband",
+      "charset": "utf8"
+    },
+    "pool": { 
+      "min": 0, 
+      "max": 20 
+    },
+    "acquireConnectionTimeout": 2000
+  }
+}

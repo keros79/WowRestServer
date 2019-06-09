@@ -1,0 +1,33 @@
+{
+  "server":{
+    "version":"1.1",
+    "type":"http",
+    "host":"192.168.5.108",
+    "listen_port":8899,
+    "feature":[],
+    "fileRootPath":"/Users/keros/UCBandProjects/resources"
+  },
+  "redis": {
+    "type":1,
+    "host":"13.125.127.68",
+    "port":6379,
+    "password": "20022002",
+    "connectTimeout":2000
+  },
+  "db": {
+    "client": "mysql",
+    "timezone": "Asia/Seoul",
+    "connection": {
+      "host" : "ucband.ucwaremobile.com",
+      "user" : "ucware",
+      "password" : "uc_qw_!@#$",
+      "database" : "ucband",
+      "charset": "utf8"
+    },
+    "pool": { 
+      "min": 0, 
+      "max": 20 
+    },
+    "acquireConnectionTimeout": 2000
+  }
+}

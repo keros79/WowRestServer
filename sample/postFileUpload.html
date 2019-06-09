@@ -1,0 +1,29 @@
+<!doctype html>  
+<html lang="en">
+
+<head>  
+    <meta charset="utf-8">
+    <title>게시판 파일 업로드</title>
+    <meta name="description" content="File Upload">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>  
+    <div class="container-fluid">
+        <div class="row">   
+            <div class="col-sm-6 well">
+                <h1>{{title}}</h1>
+                <form action="http://127.0.0.1:8899/postFileUpload/1/band.jpg" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="image">File input</label>
+                        <input type="file" name="postFile">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> 
